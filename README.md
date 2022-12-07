@@ -61,15 +61,12 @@
     </strong>    
         </h5>
         
-        <h1>
-        <strong>    IMPORTANT : SHARKS DO NOT LIVE IN ANTARCTICA!!!*       
+        <h3>
+        <strong>
+        IMPORTANT : SHARKS DO NOT LIVE IN ANTARCTICA!!!*       
         </strong>    
-        </h1>
-            <h6>
-            <em>
-            *they might come because of global warming 
-            </em>
-            </h6>
+        </h3>
+           
             <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/shark.png"width = "400"height = "262">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Penguin"
             >
