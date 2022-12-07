@@ -68,8 +68,7 @@
         </h3>
            
             <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/shark.png"width = "400"height = "262">
-            <a target="_blank" href="https://en.wikipedia.org/wiki/Penguin"
-            >
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Penguin">
             <h2 id="link">More about penguins</h2>    
             </a>
     </body>
