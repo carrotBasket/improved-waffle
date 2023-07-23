@@ -1,0 +1,109 @@
+import time
+
+time.sleep(0.1)
+ship_name = 'USS Firebird'
+location = 'The Nebulon System'
+airlock = 'closed'
+
+
+def password():
+  password = '21999001938842'
+  paAttempt = input('ENTER PASSWORD :')
+  while paAttempt != password:
+    print('PASSWORD INCORRECT')
+    paAttempt = input('ENTER PASSWORD :')
+    print('CORRECT')  
+  print('')
+  ask_name = input('What is your name? ')
+  captain = ask_name
+  print('Welcome to the ' + ship_name + ' , ' + captain)  
+  print('')
+  print('The ' + ship_name + ' is currently visiting ' + location + '.')
+
+password()
+
+
+choice = ''
+while choice != '/exit':
+  print('What would you like to do?')
+  print('')
+  print('/a : travel to another planet')
+  print("/b : fire cannons at a rival country's ship")
+  print('/c : open/close airlock')
+  print('/d : self - destruct')
+  print('/e : send emergency radio message')
+  print('/exit to exit')
+  print('')
+  choice = input('Enter your choice ')
+  if choice == '/a':
+    destination = input('Where would you like to travel? ')
+    print('Leaving ' + location)
+    location = destination
+    print('Travleing to ' + destination)
+    time.sleep(3)
+    print('Arrived at ' + destination) 
+  elif choice == '/b':
+    print('Firing cannons')
+    for _i in range(5):
+      print('BANG')
+      time.sleep(0.2)
+  elif choice == '/c':
+    if airlock == 'closed':
+      print('Opening airlock')
+      time.sleep(2)
+      print('Airlock open')
+      airlock = 'open'
+      print('')
+      time.sleep(2)
+    if airlock == 'open':
+      print('Closing airlock')
+      time.sleep(2)
+      print('Airlock Closed')
+      airlock = 'closed'
+      print('')
+      time.sleep(1)
+  elif choice == '/d':
+      print('You will need to enter the password to self - destruct')
+      print('')
+      password()
+      comfirm = input('Are you sure you want to self destruct? y/n ')
+      print('Ok')
+      if comfirm == 'y':
+        print('Starting self - destruct sequence')
+        print('')
+        time.sleep(1)
+        print('Ship will self destruct in')
+        print(3)
+        time.sleep(1)
+        print(2)
+        time.sleep(1)
+        print(1)
+        time.sleep(1)
+        print('Goodbye')
+        time.sleep(1)
+        print('BOOM')
+        choice = '/exit'
+  elif choice == '/exit':
+    print('GOODBYE')
+    exit()
+  elif choice == '/e':
+    print('What is your reason of sending a emergancy message?')
+    print('1 : Enemy fighters are attacking')
+    print('2 : Your ship is crashing')
+    print('')
+    choice2 = input('')
+    if choice2 == '1':
+      for i in range(5):
+        print('BANG')
+        time.sleep(0.2)
+      print('')  
+      print('You have contacted support ships and they have shot down all enemy fighters')
+      print('')
+      time.sleep(0.6)
+    if choice2 == '2':
+      print('You have contacted repair ships and they have fixed your spacecraft')
+  else:
+    print('Invalid input. Please select /a, /b, /c, or /d. /exit to exit')
+    print('')
+    print('')
+
